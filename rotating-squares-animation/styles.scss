@@ -1,0 +1,113 @@
+@keyframes animate-0 {
+    0% { transform: rotate(0deg); }
+    50%,100% { transform: rotate(180deg); }
+}
+
+@keyframes animate-1 {
+    0% { transform: rotate(0deg); }
+    85% { transform: rotate(90deg); }
+    100% { transform: rotate(180deg); }
+}
+
+@keyframes rotate-0 {
+    0% { transform: rotate(90deg); }
+    50%,100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-1 {
+    0% { transform: rotate(90deg); }
+    85% { transform: rotate(45deg); }
+    100% { transform: rotate(0deg); }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #ff0;
+    --color-2: #0f0;
+    --color-3: #ff4786;
+    --color-4: #2da2ff;     
+
+    --rotate-animation: rotate-1;
+    --animate-animation: animate-1;
+}
+
+@keyframes changeBgColor {
+    0% { background: var(--color-1); }
+    25% { background: var(--color-2); }
+    50% { background: var(--color-3); }
+    75% { background: var(--color-4); }
+    100% { background: var(--color-1); }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: changeBgColor 4s steps(1) infinite;
+
+    .loader {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: #000;
+        animation: var(--rotate-animation) 1s linear infinite;
+
+        div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            animation: var(--animate-animation) 1s linear infinite;
+
+            &:nth-child(1) {
+                top: -100%;
+                left: -2px;
+                transform-origin: bottom right;
+
+                &::before { background: var(--color-1); }
+            }
+
+            &:nth-child(2) {
+                right: -100%;
+                top: -2px;
+                transform-origin: bottom left;
+
+                &::before { background: var(--color-2); }
+            }
+
+            &:nth-child(3) {
+                bottom: -100%;
+                left: 2px;
+                transform-origin: top left;
+
+                &::before { background: var(--color-3); }
+            }
+
+            &:nth-child(4) {
+                left: -100%;
+                top: 2px;
+                transform-origin: top right;
+
+                &::before { background: var(--color-4); }
+            }
+            
+        }
+        
+        &::before,
+        div::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background: #fff;
+        }
+    }
+}
