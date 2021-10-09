@@ -3,8 +3,8 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### Sidenav
 <div center>
-    <img src="./md-assets/nav-menu-1.png" alt="Nav Menu 1" width="160px">
-    <img src="./md-assets/nav-menu-2.png" alt="Nav Menu 2" width="160px">
+    <img src="./md-assets/nav-menu-1.png" alt="Nav Menu 1" width="360px">
+    <img src="./md-assets/nav-menu-2.png" alt="Nav Menu 2" width="360px">
 </div>
 
 
@@ -13,7 +13,7 @@ Some random web components created by following tutorials or freestyle coding :D
     <img src="./md-assets/responsive-cards-d.png" alt="Nav Menu 1">
 
 <p align="center">
-<img centered src="./md-assets/responsive-cards-m.png" alt="Nav Menu 2" width="160px">
+<img centered src="./md-assets/responsive-cards-m.png" alt="Nav Menu 2" width="260px">
 </p>
 </div>
 
