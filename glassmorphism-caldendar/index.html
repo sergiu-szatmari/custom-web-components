@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Calendar</title>
+
+    <!-- https://github.com/yusufshakeel/dyCalendarJS -->
+    <link rel="stylesheet" href="./dyCalendar/dyCalendar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div id="dycalendar"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- https://github.com/yusufshakeel/dyCalendarJS -->
+    <script src="./dyCalendar/dyCalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show'
+        });
+
+        document.querySelectorAll('td')
+            .forEach((td) => !td.innerHTML ? td.classList.add('no-data') : null);
+    </script>
+</body>
+</html>
