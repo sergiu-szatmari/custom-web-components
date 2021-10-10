@@ -23,3 +23,6 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### Glassmorphism Calendar
 ![](./md-assets/glassmorphism-calendar.png)
+
+#### Neon Loading Spinner
+![](./md-assets/neon-loading-spinner.gif)
