@@ -32,3 +32,7 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### Loading Animation
 ![](./md-assets/loading-animation.gif)
+
+
+#### Water Drops - SCSS Drawing
+![](./md-assets/water-drops-scss.png)
