@@ -21,8 +21,14 @@ Some random web components created by following tutorials or freestyle coding :D
 #### "Rotating squares" loading animation
 ![](./md-assets/rotating-squares-loading-animation.gif)
 
+
 #### Glassmorphism Calendar
 ![](./md-assets/glassmorphism-calendar.png)
 
+
 #### Neon Loading Spinner
 ![](./md-assets/neon-loading-spinner.gif)
+
+
+#### Loading Animation
+![](./md-assets/loading-animation.gif)
