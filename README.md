@@ -36,3 +36,6 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### Water Drops - SCSS Drawing
 ![](./md-assets/water-drops-scss.png)
+
+#### [Neon Gradient Loading Spinner](https://helix-0.web.app/demo/custom-web-components/neon-gradient-loading-spinner)
+![](./md-assets/neon-gradient-loading-spinner.gif)
