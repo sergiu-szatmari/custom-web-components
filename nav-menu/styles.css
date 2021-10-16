@@ -48,12 +48,14 @@ body .navigation ul li {
   width: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-top: 16px;
+  margin-top: 32px;
   z-index: 2;
 }
 body .navigation ul li:hover {
   background: #232a30;
-  transition: background 0.3s ease;
+}
+body .navigation ul li:first-child {
+  margin-top: 0;
 }
 body .navigation ul li:nth-last-child(2) {
   margin-top: auto;
@@ -65,27 +67,30 @@ body .navigation ul li.active {
   background: #4187f6;
   z-index: 1;
 }
-body .navigation ul li.active a::before {
-  content: "";
+body .navigation ul li.active .corner {
   position: absolute;
-  top: -30px;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background: #2b343b;
-  border-radius: 50%;
-  box-shadow: 15px 15px 0 #4187f6;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background: #4187f6;
 }
-body .navigation ul li.active a::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  width: 30px;
-  height: 30px;
+body .navigation ul li.active .corner .inner {
   background: #2b343b;
-  border-radius: 50%;
-  box-shadow: 15px -15px 0 #4187f6;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+body .navigation ul li.active .corner.top-corner {
+  top: -40px;
+}
+body .navigation ul li.active .corner.top-corner .inner {
+  border-radius: 100% 0% 100% 0%/0% 0% 100% 100%;
+}
+body .navigation ul li.active .corner.bottom-corner {
+  bottom: -40px;
+}
+body .navigation ul li.active .corner.bottom-corner .inner {
+  border-radius: 0% 100% 0% 100%/100% 100% 0% 0%;
 }
 body .navigation ul li a {
   position: relative;

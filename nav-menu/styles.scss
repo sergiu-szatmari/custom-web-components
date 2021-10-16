@@ -52,48 +52,48 @@ body {
             width: 100%;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            margin-top: 16px;
+            margin-top: 32px;
             z-index: 2;
 
             &:hover {
                 background: #232a30;
-                transition: background .3s ease;
+                // transition: background .2s ease;
             }
 
-            &:nth-last-child(2) {
-                margin-top: auto;
-            }
-
-            &:last-child a .icon ion-icon {
-                transform: rotate(180deg);
-            }
+            &:first-child { margin-top: 0; }
+            &:nth-last-child(2) { margin-top: auto; }
+            &:last-child a .icon ion-icon { transform: rotate(180deg); }
 
             &.active {
                 background: #4187f6;
                 z-index: 1;
 
-                a::before {
-                    content: '';
+                .corner {
                     position: absolute;
-                    top: -30px;
-                    right: 0;
-                    width: 30px;
-                    height: 30px;
-                    background: #2b343b;
-                    border-radius: 50%;
-                    box-shadow: 15px 15px 0 #4187f6;
-                }
-    
-                a::after {
-                    content: '';
-                    position: absolute;
-                    bottom: -30px;
-                    right: 0;
-                    width: 30px;
-                    height: 30px;
-                    background: #2b343b;
-                    border-radius: 50%;
-                    box-shadow: 15px -15px 0 #4187f6;
+                    right: 0px;
+                    width: 40px;
+                    height: 40px;
+                    background: #4187f6;
+
+                    .inner {
+                        background: #2b343b;
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+
+                    }
+
+                    &.top-corner {
+                        top: -40px;
+
+                        .inner { border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%; }
+                    }
+
+                    &.bottom-corner {
+                        bottom: -40px;
+
+                        .inner { border-radius: 0% 100% 0% 100% / 100% 100% 0% 0%; }
+                    }
                 }
             }
 
