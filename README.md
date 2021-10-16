@@ -39,3 +39,6 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### [Neon Gradient Loading Spinner](https://helix-0.web.app/demo/custom-web-components/neon-gradient-loading-spinner)
 ![](./md-assets/neon-gradient-loading-spinner.gif)
+
+#### [Animated Loading Bar](https://helix-0.web.app/demo/custom-web-components/animated-loading-bar)
+![](./md-assets/animated-loading-bar.gif)
