@@ -42,3 +42,6 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### [Animated Loading Bar](https://helix-0.web.app/demo/custom-web-components/animated-loading-bar)
 ![](./md-assets/animated-loading-bar.gif)
+
+#### [Animated Checkbox](https://helix-0.web.app/demo/custom-web-components/animated-checkbox)
+![](./md-assets/animated-checkbox.gif)
