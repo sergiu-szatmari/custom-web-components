@@ -45,3 +45,6 @@ Some random web components created by following tutorials or freestyle coding :D
 
 #### [Animated Checkbox](https://helix-0.web.app/demo/custom-web-components/animated-checkbox)
 ![](./md-assets/animated-checkbox.gif)
+
+#### [Toggles](https://helix-0.web.app/demo/custom-web-components/toggles)
+![](./md-assets/toggles.gif)
