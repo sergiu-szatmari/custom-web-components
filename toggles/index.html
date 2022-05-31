@@ -13,6 +13,12 @@
         <div id="toggle">
             <i class="indicator"></i>
         </div>
+
+        <label id="checkbox">
+            <input type="checkbox" checked>
+            <span></span>
+            <i class="indicator"></i>
+        </label>
     </section>
 
     <script>
@@ -20,9 +26,12 @@
 
         const section = $('section');
         const toggle = $('#toggle');
+        const checkbox = $('#checkbox');
+        
         toggle.onclick = function() {
             toggle.classList.toggle('active');
             section.classList.toggle('active');
+            checkbox.classList.toggle('active')
         }
     </script>
 </body>
